@@ -4,7 +4,6 @@
   "description": "Shareable ESLint config for Scratch",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install",
     "test": "eslint ."
   },
   "eslintConfig": {
@@ -33,17 +32,19 @@
     "eslint": "^8.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.17.0",
-    "@commitlint/cli": "17.1.2",
-    "@commitlint/config-conventional": "17.1.0",
-    "eslint": "8.15.0",
-    "husky": "8.0.1",
-    "scratch-semantic-release-config": "1.0.5",
-    "semantic-release": "19.0.5"
+    "@babel/eslint-parser": "^7.17.0",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "eslint": "^8.0.0",
+    "scratch-semantic-release-config": "^1.0.5",
+    "semantic-release": "^19.0.5"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@babel/core": ">=7.11.0"
   }
 }
